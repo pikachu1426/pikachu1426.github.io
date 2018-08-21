@@ -1,3 +1,3 @@
 # My personal website
 
-[pikachu1426.github.io](https://pikachu1426.github.io/)
+[yimingnzhao.github.io](https://yimingnzhao.github.io/)
