@@ -1,0 +1,374 @@
+html {
+    scroll-behavior: auto;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #33CCFF;
+    font-size: 40px;
+    word-break: break-all;
+}
+
+h2 {
+    text-align: left;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #33CCFF;
+    font-size:30px;
+}
+
+.typewriter {
+    font-family: 'Raleway', sans-serif;
+    padding-top: 1em;
+    padding-bottom: 3.5em;
+    padding-right: 2em;
+    padding-left: 2em; 
+    font-size: 3.5em;
+    font-weight: 200;
+    margin: 0.4em 0;
+    text-align: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+img.modal-btn {
+    border: thin solid black;
+}
+
+#about-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-item {
+    flex-basis: 100%;
+    align-self: flex-start;
+}
+
+.justified-text {
+    text-align: justify;
+}
+
+#slideshow {
+    position: relative;
+}
+
+#slideshow > div {
+    position: absolute; 
+}
+
+.slideshow-img {
+    bottom: 0px;
+}
+
+#greeting-container {
+    margin-top: 20px;
+}
+
+/*Begin styles for vertical navigation bar*/
+.sidebar {  
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+ 
+.sidebar a.active {
+    background-color: #33CCFF;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div#nav-content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float: left;}
+    div#nav-content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+/*End styles for vertical navigation bar*/
+
+
+/* Begin box design for work and projects */
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row {
+    margin: 8px -16px;
+    display: table;
+    background-color: white;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    background-color: white;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+.content > img {
+    border: 1px solid black;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+/* End box design for work and projects */
+
+#icons-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.clickable-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.clickable-icon:hover {
+    opacity: 50%;
+}
+
+/* Begin modal content */
+.modal-btn:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.modal-text {
+    display: none;
+}
+
+.modal-text-header {
+    display: none;
+}
+
+.modal-text-tech {
+    display: none;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+    .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #33CCFF;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+#modal-header-display {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.25em;
+}
+/* End modal content */
+
+/* Begin styles for comments section */
+#comments-section {
+    box-sizing: border-box;
+}
+
+#comments-section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.comments-div {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    height: 450px;
+}
+
+#comments-input {
+    padding-right: 20px;
+}
+
+#comments-display {
+    padding-left: 20px;
+}
+
+#comments-input > form > textarea {
+    resize: none;
+    width: 100%;  
+}
+
+@media screen and (max-width: 600px) {
+  .comments-div {
+    width: 100%;
+  }
+}
+
+#comments-scroll {
+    height: 270px;
+    overflow: scroll;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+table {
+    width: 100%;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+/* End styles for comments section */
+
+/* Begin styles for pie charts */
+#chart-container {
+    box-sizing: border-box;
+}
+
+#chart-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#chart-container > p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.chart-div {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    padding-top: 0px;
+    height: 700px;
+}
+
+@media screen and (max-width: 1200px) {
+  .chart-div {
+    width: 100%;
+  }
+}
+/* End styles for pie charts */
