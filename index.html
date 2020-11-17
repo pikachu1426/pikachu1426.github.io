@@ -10,54 +10,222 @@
 	<script src="script.js"></script>
 </head>
 <body>
-	<h1>Testing deployment...</h1>
-	<h2>Hi Eugene, can you see this?</h2>
 
-	<div>
-		<h2>About Me</h2>
-		<div id="about-container">
-			<div class="about-item">
-				<p class="justified-text">
-					Hello, I'm Nathan! Welcome to my portfolio page! Here, you can learn all sorts of things 
-					about who I am and what I do. Let's get started! 
-					<br>
-					<br>
-					I was the kid that always wanted to explore something new, like trying to make plasma by microwaving a 
-					grape. Now, instead of breaking microwaves, I'm striving to create without the destructive side 
-					effects. When the time came for college, I ended up choosing to study computer engineering, where 
-					most of my accidental unwanted side effects could be fixed with a 'Ctrl+C' or a 'git revert', but where 
-					I still have the opportunity to make objects light up, process outputs of ultrasonic sensors, and 
-					just interact with the physical world with the things I build (even if a few LEDs or resistors are 
-					sacrificed in the process). Now, I'm starting my third and final year for my Bachelor's degree, and 
-					I'm on track to complete my Master's degree in computer engineering by Spring of 2022. 
-					<br>
-					<br>
-					My current interest resides in finding and understanding the applications of theoretical principles 
-					that I am learning about in my courses. I find abstract notions to be wonderful to think about, I 
-					believe that the true beauty of these theoretical concepts is how they can be applied to our daily lives. 
-					Two specific topics that I am currently diving in to are cryptography and electronic linear systems. In 
-					crypto, I can continue to constructively break things. Since the whole point of cryptography is to make 
-					systems that can provide a secure line of data flow between users, finding ways to break cryptographic 
-					objects (or failing to do so) helps with determining what methods of cryptography should be used in 
-					the real world. In electronic linear systems, I've dealt with the modeling of operations on signals 
-					using Fourier properties. While these systems are modeled with sets of equations, they can be applied 
-					to real world situations, such as modulating a talk radio signal to a certain frequency, which can be 
-					demodulated by a radio tuning in to that frequency.  
-					<br>
-					<br>
-					In my spare time, I enjoy reading scary stories, pondering different philosophical schools of thought 
-					as I strive to discover more about myself, and collecting Pokemon in hopes that I one day will complete 
-					the Pokedex, even if The Pokemon Company designs more and more Pokemon every few years. 
-				</p>
-			</div>
-			<div class="about-item">
-				<div id="slideshow">
-					<div><img class="slideshow-img" src="/images/slideshow_1.png"></div>
-					<div><img class="slideshow-img" src="/images/slideshow_2.png"></div>
-					<div><img class="slideshow-img" src="/images/slideshow_3.png"></div> 
+	<div class="sidebar">
+		<a class="active scroll" href="#">Home</a>
+		<a class="scroll" href="#about">About Me</a>
+		<a class="scroll" href="#work">Work </a>        
+		<a class="scroll" href="#projects">Projects</a>
+		<a class="scroll" href="#comments">Comments</a>
+		<a class="scroll" href="#contact">Contact</a>
+	</div>
+
+	<div id="nav-content">
+		<div id="modal-div" class="modal">
+		<!-- Modal content -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2 id="modal-header-display">Modal Header</h2>
+				</div>
+				<div class="modal-body">
+					<p id="modal-text-display"></p>
+					<p id="modal-tech-list"></p>
 				</div>
 			</div>
 		</div>
-	</div>
+
+		<h1>Hello, I'm Nathan!</h1>
+		<div class="typewriter">
+			<p> 
+				To
+				<span class="txt-rotate" data-period="1000" data-id="1"></span>
+			</p>
+			<p>
+				I am 
+				<span class="txt-rotate" data-period="2000" data-id="2"></span>
+			</p>
+			<br>
+			<br>
+		</div>
+		<hr>
+
+		<div id="about">
+			<h2>About Me</h2>
+			<div id="about-container">
+				<div class="about-item">
+					<p class="justified-text">
+						Hello, I'm Nathan! Welcome to my portfolio page! Here, you can learn all sorts of things 
+						about who I am and what I do. Let's get started! 
+						<br>
+						<br>
+						I was the kid that always wanted to explore something new, like trying to make plasma by microwaving a 
+						grape. Now, instead of breaking microwaves, I'm striving to create without the destructive side 
+						effects. When the time came for college, I ended up choosing to study computer engineering, where 
+						most of my accidental unwanted side effects could be fixed with a 'Ctrl+C' or a 'git revert', but where 
+						I still have the opportunity to make objects light up, process outputs of ultrasonic sensors, and 
+						just interact with the physical world with the things I build (even if a few LEDs or resistors are 
+						sacrificed in the process). Now, I'm starting my third and final year for my Bachelor's degree, and 
+						I'm on track to complete my Master's degree in computer engineering by Spring of 2022. 
+						<br>
+						<br>
+						My current interest resides in finding and understanding the applications of theoretical principles 
+						that I am learning about in my courses. I find abstract notions to be wonderful to think about, I 
+						believe that the true beauty of these theoretical concepts is how they can be applied to our daily lives. 
+						Two specific topics that I am currently diving in to are cryptography and electronic linear systems. In 
+						crypto, I can continue to constructively break things. Since the whole point of cryptography is to make 
+						systems that can provide a secure line of data flow between users, finding ways to break cryptographic 
+						objects (or failing to do so) helps with determining what methods of cryptography should be used in 
+						the real world. In electronic linear systems, I've dealt with the modeling of operations on signals 
+						using Fourier properties. While these systems are modeled with sets of equations, they can be applied 
+						to real world situations, such as modulating a talk radio signal to a certain frequency, which can be 
+						demodulated by a radio tuning in to that frequency.  
+						<br>
+						<br>
+						In my spare time, I enjoy reading scary stories, pondering different philosophical schools of thought 
+						as I strive to discover more about myself, and collecting Pokemon in hopes that I one day will complete 
+						the Pokedex, even if The Pokemon Company designs more and more Pokemon every few years. 
+					</p>
+				</div>
+				<div class="about-item">
+					<div id="slideshow">
+						<div><img class="slideshow-img" src="./images/slideshow_1.png"></div>
+						<div><img class="slideshow-img" src="./images/slideshow_2.png"></div>
+						<div><img class="slideshow-img" src="./images/slideshow_3.png"></div> 
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		<hr>
+
+		<div id="work">
+			<h2>Work</h2>
+			<div class="main">
+				<div class="content">
+					<img src="./images/ucsd_pano.jpg" alt="UCSD Panorama">
+					<h3>UCSD Triton</h3>
+					<p class="justified-text">
+						I am currently a student at UC San Diego, majoring in Computer Engineering. In the field 
+						of computer science, I have taken classes on topics such as Software Engineering, Data 
+						Structures, and Algorithm Analysis. Moreover, I have taken courses in the field of 
+						electrical engineering, such as Analog Design and Linear Systems. 
+					</p>
+				</div>
+				<!-- Portfolio Gallery Grid -->
+				<div class="row">
+					<div class="column">
+						<div class="content">
+							<div class="modal-btn">
+								<img src="./images/step.jpg" id="test" class="modal-btn" alt="Google STEP Logo">
+								<p class="modal-text">
+									In progress :)                                        
+								</p>
+								<p class="modal-text-header">
+									Google STEP
+								</p>
+							</div>
+							<h3>Google STEP</h3>
+							<h5>June 2020 - Present</h5>
+							<p>
+								Hey, that's right now!
+							</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<div class="modal-btn">
+								<img src="./images/tse.png" class="modal-btn" alt="Triton Software Engineering">
+								<p class="modal-text">
+									The mission of TSE is to provide non-profits with technical solutions. 
+									I have personally been on two development teams. While on the UCSD Innovation
+									team, I helped develop the database structure of the interactive 
+									<a href="https://innovation.ucsd.edu/" target="_blank">Innovation Portal</a>,
+									which is currently being used by the UCSD community to find 
+									opportunities in research and development. While on the Internaltional Health
+									Collective team, where I contributed to patient data organization and 
+									implemented the display and storage of numerical data to incorporate unit
+									conversion functionality for a tablet application that will be used by 
+									medical professionals in Tijuana.
+								</p>
+								<p class="modal-text-header">
+									Triton Software Engineering
+								</p>
+							</div>
+							<h3>UCSD: TSE</h3>
+							<h5>Sept. 2018 - Present</h5>
+							<p>
+								Developer for the Triton Software Engineering club
+							</p> 
+							<p>
+								Works on technical solutions for non-profits
+							</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<div class="modal-btn">
+								<img src="./images/ece.png" class="modal-btn" alt="Jacobs School of Engineering">
+								<p class="modal-text">
+									I worked under the guidance of Dr. Siavash Mirarab on measuring the 
+									correctness of an error detection tool for multiple sequence alignments of
+									phylogenetic data. Over the course of my research, I introduced specified 
+									errors to correct datasets to determine the effectiveness of the tool under 
+									different conditions and designed a pipeline to test the algorithm on 
+									hundreds of input datasets. In the end, I was able to present my research
+									findings at UCSD's Summer Research Conference. 
+								</p>
+								<p class="modal-text-header">
+									ECE Undergrad Researcher
+								</p>
+							</div>
+							<h3>ECE Researcher</h3>
+							<h5>June 2019 - Sept. 2019</h5>
+							<p>
+								Measured correctness of an error detection tool for MSA data
+							</p>
+							<p>
+								Developed a bash and python pipeline to test the algorithm on hundreds of input datasets
+							</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<div class="modal-btn">
+								<img src="./images/cssi.jpg" class="modal-btn" alt="Google CSSI Logo">
+								<p class="modal-text">
+									The summer after my senior year of high school, I studied the basics of web 
+									development through Google's Computer Science Summer Institute program. The 
+									last week of CSSI was dedicated to developing a standalone application, where
+									I collaborated with two other students to create and deploy a web application
+									that tracks user inputted expiration dates of foods. 
+								</p>
+								<p class="modal-text-header">
+									Google CSSI
+								</p>
+							</div>
+							<h3>Google CSSI</h3>
+							<h5>July 2018 - Aug. 2018</h5>
+							<p>
+								Studied the basics of web development and software engineering through Google's Computer Science Summer Institute program
+							</p>
+						</div>
+					</div>
+				<!-- END GRID -->
+				</div>
+			<!-- END MAIN -->
+			</div>
+			<br>
+			<br>
+			<br>
+		</div>
+		<hr>
+
+	</div>	
 </body>
 </html>
