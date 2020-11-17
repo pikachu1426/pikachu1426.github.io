@@ -16,8 +16,8 @@
 		<a class="scroll" href="#about">About Me</a>
 		<a class="scroll" href="#work">Work </a>        
 		<a class="scroll" href="#projects">Projects</a>
-		<a class="scroll" href="#comments">Comments</a>
-		<a class="scroll" href="#contact">Contact</a>
+		<a class="scroll" href="#critique">Critique</a>
+		<a class="scroll" href="#links">Links</a>
 	</div>
 
 	<div id="nav-content">
@@ -124,16 +124,33 @@
 							<div class="modal-btn">
 								<img src="./images/step.jpg" id="test" class="modal-btn" alt="Google STEP Logo">
 								<p class="modal-text">
-									In progress :)                                        
-								</p>
+									In the summer after my second year at UCSD, I participated as a STEP Intern at 
+									Google. As a part of this internship, I worked with two other interns in developing
+									a tool for extracting important phrases and their corresponding timestamps from YouTube
+									videos. The motive behind this project is to allow for fast searching through YouTube
+									videos of long lectures as we begin to determine whether an online education is a 
+									viable option. 
+									<br>
+									<br>
+									I personally developed much of the backend pipelining of data through Natrual Language
+									Processing (NLP) services. The main challenge behind this project lies in the maintenance of phrase
+									to timestamps mapping as we send text data through the NLP services. We recognize that 
+									the longer the text we parse in, the more accurate the NLP service will find words that 
+									may be considered important in its context. However, as we increase the amount of text 
+									that we pass in, we lose the timestamp accuracy. Manipulating the constraints of this 
+									problem was one of my main focuses, as I experimented with both the theoretical mathematics
+									behind this problem as well as real video data.								</p>
 								<p class="modal-text-header">
 									Google STEP
 								</p>
 							</div>
 							<h3>Google STEP</h3>
-							<h5>June 2020 - Present</h5>
+							<h5>June 2020 - Sept. 2020</h5>
 							<p>
-								Hey, that's right now!
+								Intern in the Google STEP Program
+							</p>
+							<p>
+								Worked on parsing YouTube video captions to find important key phrases and their timestamps 
 							</p>
 						</div>
 					</div>
@@ -143,22 +160,32 @@
 								<img src="./images/tse.png" class="modal-btn" alt="Triton Software Engineering">
 								<p class="modal-text">
 									The mission of TSE is to provide non-profits with technical solutions. 
-									I have personally been on two development teams. While on the UCSD Innovation
-									team, I helped develop the database structure of the interactive 
+									I have personally been on two development teams in my time at UCSD. 
+									While on the UCSD Innovation team, I helped develop the database structure of 
+									the interactive 
 									<a href="https://innovation.ucsd.edu/" target="_blank">Innovation Portal</a>,
 									which is currently being used by the UCSD community to find 
-									opportunities in research and development. While on the Internaltional Health
-									Collective team, where I contributed to patient data organization and 
-									implemented the display and storage of numerical data to incorporate unit
-									conversion functionality for a tablet application that will be used by 
-									medical professionals in Tijuana.
+									opportunities in research and development. This structure allows easy filtering 
+									of groups (i.e. Students, Faculty, and Community), as well as further filtration 
+									of potential interests to each of the groups. 
+									<br>
+									<br>
+									
+									While on the Internaltional Health Collective team, I contributed to 
+									patient data organization and implemented the display and storage of numerical 
+									data to incorporate unit conversion functionality for a tablet application 
+									that will be used by medical professionals in Tijuana. This gives users the ability
+									to easily keep track of patient data without the need of a large local database or
+									strong internet connection to fetch the said data. Our implementation of this 
+									tablet application allows for local communication with a Raspberry Pi server that 
+									stores all necessary information.
 								</p>
 								<p class="modal-text-header">
 									Triton Software Engineering
 								</p>
 							</div>
 							<h3>UCSD: TSE</h3>
-							<h5>Sept. 2018 - Present</h5>
+							<h5>Sept. 2018 - Sept. 2020</h5>
 							<p>
 								Developer for the Triton Software Engineering club
 							</p> 
@@ -178,14 +205,23 @@
 									errors to correct datasets to determine the effectiveness of the tool under 
 									different conditions and designed a pipeline to test the algorithm on 
 									hundreds of input datasets. In the end, I was able to present my research
-									findings at UCSD's Summer Research Conference. 
+									findings at UCSD's Summer Research Conference of 2019. 
+									<br>
+									<br>
+									I am currently finalizing my results from the data that I have collected
+									with my scripts. As of now, we have tested the effectiveness of error correcting
+									on three simulated datasets as well as one real dataset of multiple sequence
+									alignments. The conditions that I have tested include varying lengths of error, 
+									the percentages of rows that contain error, as well as variations in the 
+									algorithm parameters themselves. We are currently writing a paper in hopes
+									to introduce the algorithm and publish the results.
 								</p>
 								<p class="modal-text-header">
 									ECE Undergrad Researcher
 								</p>
 							</div>
 							<h3>ECE Researcher</h3>
-							<h5>June 2019 - Sept. 2019</h5>
+							<h5>June 2019 - Sept. 2019, June 2020 - Present</h5>
 							<p>
 								Measured correctness of an error detection tool for MSA data
 							</p>
@@ -200,10 +236,18 @@
 								<img src="./images/cssi.jpg" class="modal-btn" alt="Google CSSI Logo">
 								<p class="modal-text">
 									The summer after my senior year of high school, I studied the basics of web 
-									development through Google's Computer Science Summer Institute program. The 
-									last week of CSSI was dedicated to developing a standalone application, where
+									development through Google's Computer Science Summer Institute program. This 
+									included learning front end techniques in HTML, CSS, and JavaScript, as well
+									as working with a backend for data management and processing. Specifically,
+									we learned to develop with a Python based back end and database querying system.
+									<br>
+									<br>
+									The last week of CSSI was dedicated to developing a standalone application, where
 									I collaborated with two other students to create and deploy a web application
-									that tracks user inputted expiration dates of foods. 
+									that tracks user inputted expiration dates of foods. Features of this application
+									include stored data on foods that the user wishes to keep track of, an integrated
+									UI to easily see which foods will expire the soonest, as well as Google Calendar
+									notifications when foods approach their expiration dates.
 								</p>
 								<p class="modal-text-header">
 									Google CSSI
@@ -225,6 +269,152 @@
 			<br>
 		</div>
 		<hr>
+
+
+		<div id="projects">
+			<h2>Projects</h2>
+			<div class="main">
+				<!-- Portfolio Gallery Grid -->
+				<div class="row">
+					<div class="column">
+						<div class="content">
+							<div class="modal-btn">
+								<img src="./images/caprisun.png" class="modal-btn" alt="Caprisun Pathfinder">
+								<p class="modal-text">
+									A basic autonomous vehicle that detects and navigates to a radio frequency 
+									signal designed for Northrop Grumman's challenge at UCSD's H.A.R.D Hack 2020.
+									The car was built using Raspberry Pi computers running python scripts and 
+									interacting with the world via multiple hardware modules. Our team of 5 ended
+									up winning first place for Northrop Grumman's challenge.
+								</p>
+								<p class="modal-text-header">
+									Caprisun Pathfinder
+								</p>
+								<p class="modal-text-tech">
+									Python, Raspberry Pi 3, Ultrasonic Module, Antenna Module, Robot Car Chassis Kit  
+								</p>
+							</div>
+							<h3>Caprisun Pathfinder</h3>
+							<p>
+								Basic autonomous vehicle that detects and navigates to specific radio frequency signals
+							</p>
+							<p>
+								Won first place of Northrop Grumman's challenge at UCSD's H.A.R.D Hack 2020
+							</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<div class="modal-btn">
+								<img src="./images/meddata.png" class="modal-btn" alt="Med-Data">
+								<p class="modal-text">
+									An Android mobile application built at UC Riverside's Citrus Hacks 2019 that 
+									allows users to input a list of medications in their household, and alerts 
+									users when a listed medication matches a recent drug recall by the Food and 
+									Drug Administration. Our team of 4 succeeded in achieving the Best Medical
+									Hack and Best Entrepreneurial Hack awards. 
+								</p>
+								<p class="modal-text-header">
+									Med-Data
+								</p>
+								<p class="modal-text-tech">
+									Java, Android Studio, Google Firebase, OpenFDA API
+								</p>
+							</div>
+							<h3>Med-Data</h3>
+							<p>
+								Android mobile application that tracks user medications and notifies users of FDA recalls
+							</p>
+							<p>
+								Won the Best Medical Hack and Best Entrepreneurial Hack awards at Citrus Hacks 2019
+							</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<div class="modal-btn">
+								<img src="./images/projecteuler.png" class="modal-btn" alt="Project Euler">
+								<p class="modal-text">
+									My ongoing solutions to the Project Euler problems as a means for me to 
+									continue to practice and develop with the C programming language. Beyond
+									solving the individual problems, I have also implemented various data 
+									structures, such as hash tables, and mathematical algorithms, such as the 
+									Sieve of Eratosthenes, that are useful in the problem solving process. To
+									this date, I have solved around 50 problems. 
+								</p>
+								<p class="modal-text-header">
+									Project Euler Solutions
+								</p>
+								<p class="modal-text-tech">
+									C, gdb, valgrind
+								</p>
+							</div>
+							<h3>Project Euler Solutions</h3>
+							<p>
+								Ongoing solutions for Project Euler, a set of computationally focused math problems
+							</p>
+							<p>
+								Includes my implementations of data structures and other mathematical algorithms in C
+							</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<div class="modal-btn">
+								<img src="./images/freshfridge.png" class="modal-btn" alt="Fresh Fridge">
+								<p class="modal-text">
+									A web application built at Google CSSI that tracks user inputted food 
+									expiration dates, and displays the food items through a tabular interface
+									that is sorted based on food freshness. Through Google login, food expiration
+									dates can be integrated with Google Calendar so that notifications can be sent
+									as the expiration dates of foods approach.
+								</p>
+								<p class="modal-text-header">
+									Fresh Fridge
+								</p>
+								<p class="modal-text-tech">
+									Python, HTML/CSS/JavaScript, Google DataStore, Google Calendar API
+								</p>
+							</div>
+							<h3>Fresh Fridge</h3>
+							<p>
+								Web application that tracks food expiration dates and integrates with Google Calendar for notifications
+							</p>
+							<p>
+								Developed with two other students at Google CSSI within the span of 4 days
+							</p>
+						</div>
+					</div>
+				<!-- END GRID -->
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+		</div>
+		<hr>
+
+
+		<div id="critique">
+			<h2>Critique</h2>
+			<div class="main">
+				
+				<!-- END GRID -->
+			</div>
+			<br>
+			<br>
+			<br>
+		</div>
+		<hr>
+
+		<div id="links">
+			<h2>Links</h2>
+			<div class="main">
+				
+				<!-- END GRID -->
+			</div>
+		</div>
+
 
 	</div>	
 </body>
